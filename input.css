@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#container{
+    text-align: center;
+
+
+}
+#text{
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: wheat;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+
+}
+input:focus{
+    background: rgb(246, 246, 163);
+    transform: scale(1.1);
+}
+
+#price input{
+    width: 20%;
+}
+#total{
+    background: #b90e027a;
+    padding: 4px 2px;
+    border-radius: 4px 2px;
+}
+#total::before{
+content: 'total:';
+}
+button{
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+    margin: 4px 0;
+    background: rgba(0, 0, 255, 0.481);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+button:hover{
+    background: rgb(172, 105, 234);
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+#btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+#btnsearch button{
+    width: 30%;
+}
+
+table{
+    width: 90%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+    font-family: system-ui;
+}
+th,td{
+    padding: 5px;
+}
+#deleteall{
+    margin: 10px 0;
+    
+}
+/* ===================== */
+/* Mobile Responsive */
+/* ===================== */
+
+@media (max-width: 600px){
+
+#container{
+    width:95%;
+    margin:auto;
+}
+
+/* inputs */
+
+input{
+    width:100%;
+}
+
+/* price inputs */
+
+#price{
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+    justify-content:center;
+}
+
+#price input{
+    width:45%;
+}
+
+/* buttons */
+
+button{
+    width:100%;
+}
+
+/* search buttons */
+
+#btnsearch{
+    flex-direction:column;
+    gap:10px;
+}
+
+#btnsearch button{
+    width:100%;
+}
+
+/* table responsive */
+
+table{
+    width:100%;
+    font-size:12px;
+}
+
+th,td{
+    padding:3px;
+}
+
+/* لو الجدول كبير يعمل سكرول */
+
+#outputs{
+    overflow-x:auto;
+}
+
+}
+/* ===================== */
+/* Tablet Responsive */
+/* ===================== */
+
+@media (min-width:601px) and (max-width:1024px){
+
+#container{
+    width:90%;
+    margin:auto;
+}
+
+/* inputs */
+
+input{
+    width:95%;
+}
+
+/* price inputs */
+
+#price{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+#price input{
+    width:23%;
+}
+
+/* buttons */
+
+button{
+    width:90%;
+}
+
+/* search buttons */
+
+#btnsearch{
+    justify-content:space-between;
+}
+
+#btnsearch button{
+    width:45%;
+}
+
+/* table */
+
+table{
+    width:100%;
+    font-size:14px;
+}
+
+/* لو الجدول كبر */
+
+#outputs{
+    overflow-x:auto;
+}
+
+}
